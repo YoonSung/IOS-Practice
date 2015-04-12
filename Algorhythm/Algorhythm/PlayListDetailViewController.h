@@ -12,7 +12,9 @@
 
 @interface PlaylistDetailViewController : PlaylistMasterViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *buttonPressLabel;
 @property (strong, nonatomic) Playlist *playlist;
+@property (weak, nonatomic) IBOutlet UIImageView *playlistCoverImage;
+@property (weak, nonatomic) IBOutlet UILabel *playlistTitle;
+@property (weak, nonatomic) IBOutlet UILabel *playlistDescription;
 
 @end

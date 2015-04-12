@@ -66,29 +66,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You haven't pressed the button." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-T9-je1">
-                                <rect key="frame" x="38" y="273" width="244" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-T1-5xQ">
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-T1-5xQ">
                                 <rect key="frame" x="0.0" y="64" width="320" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MAW-T1-5xQ" secondAttribute="height" multiplier="32:29" id="0gv-26-6W4"/>
                                 </constraints>
                             </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIy-nf-MVz">
+                                <rect key="frame" x="0.0" y="264" width="320" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flO-rJ-F99">
+                                        <rect key="frame" x="20" y="10" width="119" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WG-Sh-HTG">
+                                        <rect key="frame" x="20" y="39" width="280" height="57"/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5WG-Sh-HTG" secondAttribute="trailing" constant="20" id="H6Z-BN-iP6"/>
+                                    <constraint firstItem="5WG-Sh-HTG" firstAttribute="leading" secondItem="UIy-nf-MVz" secondAttribute="leading" constant="20" id="ISt-Zh-Ben"/>
+                                    <constraint firstItem="5WG-Sh-HTG" firstAttribute="top" secondItem="flO-rJ-F99" secondAttribute="bottom" constant="8" id="KV5-gn-CBN"/>
+                                    <constraint firstItem="flO-rJ-F99" firstAttribute="top" secondItem="UIy-nf-MVz" secondAttribute="top" constant="10" id="O6O-fr-5Lf"/>
+                                    <constraint firstAttribute="width" secondItem="UIy-nf-MVz" secondAttribute="height" multiplier="32:9" id="WM2-vx-9dS"/>
+                                    <constraint firstItem="flO-rJ-F99" firstAttribute="leading" secondItem="UIy-nf-MVz" secondAttribute="leading" constant="20" id="gdx-tE-hr8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="MAW-T1-5xQ" firstAttribute="leading" secondItem="xdn-LP-xad" secondAttribute="leading" id="6wl-Yr-L3K"/>
                             <constraint firstItem="MAW-T1-5xQ" firstAttribute="top" secondItem="bFf-MW-zeU" secondAttribute="bottom" id="FXW-Py-Z1H"/>
+                            <constraint firstItem="UIy-nf-MVz" firstAttribute="leading" secondItem="xdn-LP-xad" secondAttribute="leading" id="IPh-dG-lA3"/>
+                            <constraint firstAttribute="trailing" secondItem="UIy-nf-MVz" secondAttribute="trailing" id="cA1-eO-fiF"/>
+                            <constraint firstItem="UIy-nf-MVz" firstAttribute="bottom" secondItem="MAW-T1-5xQ" secondAttribute="bottom" id="mts-FZ-BM0"/>
                             <constraint firstAttribute="trailing" secondItem="MAW-T1-5xQ" secondAttribute="trailing" id="tPp-XJ-IDT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="2xi-Vq-H3W"/>
                     <connections>
-                        <outlet property="buttonPressLabel" destination="jRO-T9-je1" id="JFk-fk-g7V"/>
+                        <outlet property="playlistCoverImage" destination="MAW-T1-5xQ" id="qPY-8n-6pm"/>
+                        <outlet property="playlistDescription" destination="5WG-Sh-HTG" id="tDH-mu-qsJ"/>
+                        <outlet property="playlistTitle" destination="flO-rJ-F99" id="3UL-2c-fYg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o38-sM-emK" userLabel="First Responder" sceneMemberID="firstResponder"/>
