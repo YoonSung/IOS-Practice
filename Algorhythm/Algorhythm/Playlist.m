@@ -35,7 +35,7 @@ extern NSString *const kArtists;
         _playlistIcon = [UIImage imageNamed:iconName];
         
         NSString *largeIconName = [playlistDictionary objectForKey:kLargeIcon];
-        _playlistIconLarge = [playlistDictionary objectForKey:largeIconName];
+        _playlistIconLarge = [UIImage imageNamed:largeIconName];
         
         _playlistArtists = [NSArray arrayWithArray:[playlistDictionary objectForKey:kArtists]];
         
