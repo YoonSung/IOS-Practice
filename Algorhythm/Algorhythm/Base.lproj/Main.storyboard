@@ -16,8 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Uh-At-Fm8">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2Kf-sq-TgE"/>
+                                    <constraint firstAttribute="width" constant="200" id="RkO-K9-SdI"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-zI-srE">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,8 +36,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.27788372488956659" green="0.66677795298989428" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="hrn-zI-srE" secondAttribute="centerY" id="dP3-Zp-Ert"/>
+                            <constraint firstAttribute="centerX" secondItem="7Uh-At-Fm8" secondAttribute="centerX" id="HqC-EZ-AJa"/>
+                            <constraint firstAttribute="centerY" secondItem="7Uh-At-Fm8" secondAttribute="centerY" id="aD3-37-xIy"/>
                             <constraint firstAttribute="centerX" secondItem="hrn-zI-srE" secondAttribute="centerX" id="m0B-5B-ddO"/>
+                            <constraint firstItem="hrn-zI-srE" firstAttribute="top" secondItem="7Uh-At-Fm8" secondAttribute="bottom" constant="8" id="v1c-ck-DfB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PlayLists" id="l1q-iI-gBf"/>
