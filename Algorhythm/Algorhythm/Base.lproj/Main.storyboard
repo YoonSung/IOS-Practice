@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="i2R-8l-Kd5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PlayLists-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="PlayLists" id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="q1y-fB-tO3" kind="modal" id="Kwh-HB-Ldf"/>
+                                    <segue destination="q1y-fB-tO3" kind="push" id="Kwh-HB-Ldf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,18 +33,19 @@
                             <constraint firstAttribute="centerX" secondItem="hrn-zI-srE" secondAttribute="centerX" id="m0B-5B-ddO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="PlayLists" id="l1q-iI-gBf"/>
                     <connections>
                         <outlet property="aButton" destination="hrn-zI-srE" id="MF7-8w-J9F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.666666666666671" y="406.12"/>
+            <point key="canvasLocation" x="606" y="406"/>
         </scene>
-        <!--View Controller-->
+        <!--Artists-->
         <scene sceneID="8TO-Dq-lpg">
             <objects>
-                <viewController id="q1y-fB-tO3" sceneMemberID="viewController">
+                <viewController id="q1y-fB-tO3" customClass="PlayListDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bFf-MW-zeU"/>
                         <viewControllerLayoutGuide type="bottom" id="QyV-jh-cO4"/>
@@ -54,10 +55,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Artists" id="2xi-Vq-H3W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o38-sM-emK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461" y="406"/>
+            <point key="canvasLocation" x="993" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IKE-S2-fV5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i2R-8l-Kd5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xZw-7E-div">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="hjD-F0-U9v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tF0-ph-nXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="406"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
