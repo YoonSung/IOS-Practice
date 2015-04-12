@@ -8,9 +8,11 @@
 
 #import "PlaylistMasterViewController.h"
 
+@class Playlist;
+
 @interface PlaylistDetailViewController : PlaylistMasterViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *buttonPressLabel;
-@property(strong, nonatomic) NSString * segueLabelText;
+@property (strong, nonatomic) Playlist *playlist;
 
 @end
