@@ -16,6 +16,7 @@
 		675E0DB51ADA6D6F00A09CF0 /* AlgorhythmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 675E0DB41ADA6D6F00A09CF0 /* AlgorhythmTests.m */; };
 		675E0DC01ADA78DD00A09CF0 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675E0DBF1ADA78DD00A09CF0 /* PlaylistDetailViewController.m */; };
 		675E0DC31ADA8FBF00A09CF0 /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 675E0DC21ADA8FBF00A09CF0 /* MusicLibrary.m */; };
+		675E0DC61ADAAE0F00A09CF0 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 675E0DC51ADAAE0F00A09CF0 /* Playlist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		675E0DBF1ADA78DD00A09CF0 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
 		675E0DC11ADA8FBF00A09CF0 /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
 		675E0DC21ADA8FBF00A09CF0 /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
+		675E0DC41ADAAE0F00A09CF0 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		675E0DC51ADAAE0F00A09CF0 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				675E0DBF1ADA78DD00A09CF0 /* PlaylistDetailViewController.m */,
 				675E0DC11ADA8FBF00A09CF0 /* MusicLibrary.h */,
 				675E0DC21ADA8FBF00A09CF0 /* MusicLibrary.m */,
+				675E0DC41ADAAE0F00A09CF0 /* Playlist.h */,
+				675E0DC51ADAAE0F00A09CF0 /* Playlist.m */,
 				675E0DA21ADA6D6F00A09CF0 /* Main.storyboard */,
 				675E0DA51ADA6D6F00A09CF0 /* Images.xcassets */,
 				675E0DA71ADA6D6F00A09CF0 /* LaunchScreen.xib */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				675E0DA11ADA6D6F00A09CF0 /* PlaylistMasterViewController.m in Sources */,
+				675E0DC61ADAAE0F00A09CF0 /* Playlist.m in Sources */,
 				675E0DC01ADA78DD00A09CF0 /* PlaylistDetailViewController.m in Sources */,
 				675E0D9E1ADA6D6F00A09CF0 /* AppDelegate.m in Sources */,
 				675E0D9B1ADA6D6F00A09CF0 /* main.m in Sources */,
