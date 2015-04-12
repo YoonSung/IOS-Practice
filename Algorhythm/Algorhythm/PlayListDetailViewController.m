@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.buttonPressLabel.text = self.playlist.playlistTitle;
+    
+    if (self.playlist) {
+        self.buttonPressLabel.text = self.playlist.playlistTitle;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

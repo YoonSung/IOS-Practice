@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="i2R-8l-Kd5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--PlayLists-->
@@ -71,8 +72,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-T1-5xQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MAW-T1-5xQ" secondAttribute="height" multiplier="32:29" id="0gv-26-6W4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MAW-T1-5xQ" firstAttribute="leading" secondItem="xdn-LP-xad" secondAttribute="leading" id="6wl-Yr-L3K"/>
+                            <constraint firstItem="MAW-T1-5xQ" firstAttribute="top" secondItem="bFf-MW-zeU" secondAttribute="bottom" id="FXW-Py-Z1H"/>
+                            <constraint firstAttribute="trailing" secondItem="MAW-T1-5xQ" secondAttribute="trailing" id="tPp-XJ-IDT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="2xi-Vq-H3W"/>
                     <connections>
@@ -88,9 +100,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i2R-8l-Kd5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xZw-7E-div">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="xZw-7E-div">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
