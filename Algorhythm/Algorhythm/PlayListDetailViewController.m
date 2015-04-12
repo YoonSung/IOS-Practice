@@ -6,17 +6,18 @@
 //  Copyright (c) 2015년 architree. All rights reserved.
 //
 
-#import "PlayListDetailViewController.h"
+#import "PlaylistDetailViewController.h"
 
-@interface PlayListDetailViewController ()
+@interface PlaylistDetailViewController ()
 
 @end
 
-@implementation PlayListDetailViewController
+@implementation PlaylistDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //[self.buttonPressLabel setText: self.segueLabelText];
+    self.buttonPressLabel.text = self.segueLabelText;
 }
 
 - (void)didReceiveMemoryWarning {

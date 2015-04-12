@@ -7,6 +7,7 @@
 //
 
 #import "PlaylistMasterViewController.h"
+#import "PlayListDetailViewController.h"
 
 @interface PlaylistMasterViewController ()
 
@@ -25,6 +26,14 @@
 }
 - (IBAction)buttonPressed:(id)sender {
     self.view.backgroundColor = [UIColor orangeColor];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
+        PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
+        playlistDetailViewController.segueLabelText = @"Yay! You pressed the button!";
+    }
 }
 
 @end
