@@ -14,43 +14,40 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7Uh-At-Fm8">
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7Uh-At-Fm8">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="2Kf-sq-TgE"/>
                                     <constraint firstAttribute="width" constant="200" id="RkO-K9-SdI"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-zI-srE">
-                                <rect key="frame" x="137" y="392" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <segue destination="q1y-fB-tO3" kind="push" identifier="showPlaylistDetail" id="Kwh-HB-Ldf"/>
+                                    <outletCollection property="gestureRecognizers" destination="qlh-pX-FI7" appends="YES" id="QzR-lJ-tov"/>
                                 </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="7Uh-At-Fm8" secondAttribute="centerX" id="HqC-EZ-AJa"/>
                             <constraint firstAttribute="centerY" secondItem="7Uh-At-Fm8" secondAttribute="centerY" id="aD3-37-xIy"/>
-                            <constraint firstAttribute="centerX" secondItem="hrn-zI-srE" secondAttribute="centerX" id="m0B-5B-ddO"/>
-                            <constraint firstItem="hrn-zI-srE" firstAttribute="top" secondItem="7Uh-At-Fm8" secondAttribute="bottom" constant="8" id="v1c-ck-DfB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PlayLists" id="l1q-iI-gBf"/>
                     <connections>
-                        <outlet property="aButton" destination="hrn-zI-srE" id="MF7-8w-J9F"/>
                         <outlet property="playlistImageView0" destination="7Uh-At-Fm8" id="C3x-gV-MKe"/>
+                        <segue destination="q1y-fB-tO3" kind="push" identifier="showPlaylistDetail" id="eXd-Pd-NNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qlh-pX-FI7">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="gFJ-td-QgZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="606" y="406"/>
         </scene>
@@ -63,7 +60,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QyV-jh-cO4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xdn-LP-xad">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-T1-5xQ">
@@ -166,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
