@@ -18,27 +18,72 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7Uh-At-Fm8">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="2" y="66" width="157" height="165"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2Kf-sq-TgE"/>
-                                    <constraint firstAttribute="width" constant="200" id="RkO-K9-SdI"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qlh-pX-FI7" appends="YES" id="QzR-lJ-tov"/>
                                 </connections>
                             </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-vj-eKW">
+                                <rect key="frame" x="161" y="66" width="157" height="165"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ZYS-dw-QRp">
+                                <rect key="frame" x="2" y="233" width="157" height="165"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="VsJ-8n-9ZN">
+                                <rect key="frame" x="161" y="233" width="157" height="165"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="F31-ED-qvd">
+                                <rect key="frame" x="2" y="400" width="157" height="165"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="8Tm-m4-DrX">
+                                <rect key="frame" x="161" y="400" width="157" height="165"/>
+                                <gestureRecognizers/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="7Uh-At-Fm8" secondAttribute="centerX" id="HqC-EZ-AJa"/>
-                            <constraint firstAttribute="centerY" secondItem="7Uh-At-Fm8" secondAttribute="centerY" id="aD3-37-xIy"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="leading" secondItem="ZYS-dw-QRp" secondAttribute="trailing" constant="2" id="2ch-Vp-HIW"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="width" secondItem="8Tm-m4-DrX" secondAttribute="width" id="8X4-v4-2d9"/>
+                            <constraint firstAttribute="trailing" secondItem="i1s-vj-eKW" secondAttribute="trailing" constant="2" id="9Dn-MM-Tve"/>
+                            <constraint firstItem="i1s-vj-eKW" firstAttribute="leading" secondItem="7Uh-At-Fm8" secondAttribute="trailing" constant="2" id="GOq-UG-jhZ"/>
+                            <constraint firstItem="8Tm-m4-DrX" firstAttribute="top" secondItem="VsJ-8n-9ZN" secondAttribute="bottom" constant="2" id="KnY-Up-wQR"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="height" secondItem="i1s-vj-eKW" secondAttribute="height" id="N50-yW-zug"/>
+                            <constraint firstItem="ZYS-dw-QRp" firstAttribute="top" secondItem="7Uh-At-Fm8" secondAttribute="bottom" constant="2" id="OJf-9Y-J0f"/>
+                            <constraint firstItem="8Tm-m4-DrX" firstAttribute="leading" secondItem="F31-ED-qvd" secondAttribute="trailing" constant="2" id="OMC-tI-Zhw"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="height" secondItem="F31-ED-qvd" secondAttribute="height" id="QUJ-on-Ct4"/>
+                            <constraint firstItem="7Uh-At-Fm8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="2" id="RLG-eW-rlV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="F31-ED-qvd" secondAttribute="bottom" constant="3" id="Wp8-jB-YS3"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="height" secondItem="7Uh-At-Fm8" secondAttribute="height" id="XvM-GM-5Pq"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8Tm-m4-DrX" secondAttribute="bottom" constant="3" id="ZHH-as-NKq"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="width" secondItem="7Uh-At-Fm8" secondAttribute="width" id="ZdC-8k-gw0"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="height" secondItem="ZYS-dw-QRp" secondAttribute="height" id="asI-zq-mdK"/>
+                            <constraint firstAttribute="trailing" secondItem="8Tm-m4-DrX" secondAttribute="trailing" constant="2" id="br4-Pu-GSB"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="top" secondItem="i1s-vj-eKW" secondAttribute="bottom" constant="2" id="cZV-Me-UZP"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="width" secondItem="ZYS-dw-QRp" secondAttribute="width" id="dsW-TJ-Crj"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="width" secondItem="F31-ED-qvd" secondAttribute="width" id="eiT-4K-i1N"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="height" secondItem="8Tm-m4-DrX" secondAttribute="height" id="fOR-Q3-TCn"/>
+                            <constraint firstItem="7Uh-At-Fm8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="2" id="fxV-2Z-Sa8"/>
+                            <constraint firstItem="F31-ED-qvd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="2" id="hw0-vl-mHb"/>
+                            <constraint firstItem="F31-ED-qvd" firstAttribute="top" secondItem="ZYS-dw-QRp" secondAttribute="bottom" constant="2" id="oWR-3X-kRQ"/>
+                            <constraint firstAttribute="trailing" secondItem="VsJ-8n-9ZN" secondAttribute="trailing" constant="2" id="sdf-Wb-kDT"/>
+                            <constraint firstItem="i1s-vj-eKW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="2" id="tD6-RV-czz"/>
+                            <constraint firstItem="VsJ-8n-9ZN" firstAttribute="width" secondItem="i1s-vj-eKW" secondAttribute="width" id="wcs-LS-o6N"/>
+                            <constraint firstItem="ZYS-dw-QRp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="2" id="zHO-86-4es"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PlayLists" id="l1q-iI-gBf"/>
                     <connections>
                         <outletCollection property="playlistImageViews" destination="7Uh-At-Fm8" id="ZgX-DQ-bSS"/>
+                        <outletCollection property="playlistImageViews" destination="i1s-vj-eKW" id="2dV-Jw-hfe"/>
+                        <outletCollection property="playlistImageViews" destination="ZYS-dw-QRp" id="0ee-Ml-JDe"/>
+                        <outletCollection property="playlistImageViews" destination="VsJ-8n-9ZN" id="sy7-kO-ine"/>
+                        <outletCollection property="playlistImageViews" destination="F31-ED-qvd" id="JD3-Xb-Yee"/>
+                        <outletCollection property="playlistImageViews" destination="8Tm-m4-DrX" id="b0I-sY-ujS"/>
                         <segue destination="q1y-fB-tO3" kind="push" identifier="showPlaylistDetail" id="eXd-Pd-NNT"/>
                     </connections>
                 </viewController>
